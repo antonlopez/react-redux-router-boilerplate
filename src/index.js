@@ -8,6 +8,7 @@ import App from './App';
 import css from './styles/style.styl'
 import PhotoGrid from './components/PhotoGrid';
 import Single from './components/Single'
+import Raven from 'raven-js';
 
 
 const router = (
@@ -19,7 +20,7 @@ const router = (
                 <Route exact path="/" component={PhotoGrid} />
                 <Route path="/view/:postId" component={Single}/>
                 </div>
-            
+
         </BrowserRouter>
     </Provider>
 );
